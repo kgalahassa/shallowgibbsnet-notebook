@@ -140,16 +140,16 @@ The model has to reject the partition that are generated but not accepted by an 
 
 You need to install the package shallowgibbsnet (pip install shallowgibbsnet), then import the desired structure:
     
-    1- BetweenLayerSparsed (import shallowgibbs.BetweenLayerSparsed.sgnn as ShallowGibbs)
-    2- CompoundSymmetry (import shallowgibbs.CompoundSymmetry.sgnn as ShallowGibbs)
-    3- FullySparsed (import shallowgibbs.FullySparsed.sgnn as ShallowGibbs)
-    4- FullyConnected (import shallowgibbs.FullyConnected.sgnn as ShallowGibbs)
-    5- SparsedCompoundSymmetry (import shallowgibbs.SparsedCompoundSymmetry.sgnn as ShallowGibbs)
+    1- BetweenLayerSparsed (import shallowgibbsnet.BetweenLayerSparsed.sgnn as ShallowGibbs)
+    2- CompoundSymmetry (import shallowgibbsnet.CompoundSymmetry.sgnn as ShallowGibbs)
+    3- FullySparsed (import shallowgibbsnet.FullySparsed.sgnn as ShallowGibbs)
+    4- FullyConnected (import shallowgibbsnet.FullyConnected.sgnn as ShallowGibbs)
+    5- SparsedCompoundSymmetry (import shallowgibbsnet.SparsedCompoundSymmetry.sgnn as ShallowGibbs)
 
 
 ```python
 #For example: to import the BetweenLayerSparsed model we have:
-import shallowgibbs.BetweenLayerSparsed.sgnn as ShallowGibbs
+import shallowgibbsnet.BetweenLayerSparsed.sgnn as ShallowGibbs
 ```
 
 
