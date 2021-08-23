@@ -138,7 +138,7 @@ Run the model in a finite loop for a maximum number of desired partitions such t
 
 The model has to reject the partition that are generated but not accepted by an acceptation ratio
 
-You need to install the package shallowgibbsnet (pip install shallowgibbsnet), then import the desired structure:
+You need to install the package shallowgibbsnet (pip install shallowgibbsnet), then import the desired/chosen structure:
     
     1- BetweenLayerSparsed (import shallowgibbsnet.BetweenLayerSparsed.sgnn as ShallowGibbs)
     2- CompoundSymmetry (import shallowgibbsnet.CompoundSymmetry.sgnn as ShallowGibbs)
