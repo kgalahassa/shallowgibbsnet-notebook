@@ -1,8 +1,6 @@
 # shallowgibbsnet-notebook
 This is a notebook repository to describe how to run the Shallow Gibbs Neural Network Model
 
-This notebook is set to describe how to run the Shallow Gibbs Neural Network Model
-
 Import our dataset: slump dataset (here as our e.g.)
 
 
