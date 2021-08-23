@@ -1,5 +1,5 @@
 # shallowgibbsnet-notebook
-This is a notebook repository to describe how to run the Shallow Gibbs Neural Network Model
+This notebook is set to describe how to run the Shallow Gibbs Neural Network Model
 
 Import our dataset: slump dataset (here as our e.g.)
 
@@ -133,6 +133,38 @@ output = open('Initial_Partitions_constraints_1_Sets.pkl.pkl', 'wb')
 pickle.dump(Partitions_Sets, output)
 output.close()
 ```
+
+Run the model in a finite loop for a maximum number of desired partitions such that we stop the loop when completed.
+
+The model has to reject the partition that are generated but not accepted by an acceptation ratio
+
+You need to install the package shallowgibbsnet (pip install shallowgibbsnet), then import the desired structure:
+    
+    1- BetweenLayerSparsed (import shallowgibbs.BetweenLayerSparsed.sgnn as ShallowGibbs)
+    2- CompoundSymmetry (import shallowgibbs.CompoundSymmetry.sgnn as ShallowGibbs)
+    3- FullySparsed (import shallowgibbs.FullySparsed.sgnn as ShallowGibbs)
+    4- FullyConnected (import shallowgibbs.FullyConnected.sgnn as ShallowGibbs)
+    5- SparsedCompoundSymmetry (import shallowgibbs.SparsedCompoundSymmetry.sgnn as ShallowGibbs)
+
+
+```python
+#For example: to import the BetweenLayerSparsed model we have:
+import shallowgibbs.BetweenLayerSparsed.sgnn as ShallowGibbs
+```
+
+
+```python
+Maximum_number_of_partitions = 10
+
+for i in range(Maximum_number_of_partitions):
+
+    
+    ShallowGibbs.ShallowGibbsProcedure(New_partition, xtrain, ytrain, Partitions_Sets,partition_position, xtest,ytest,my_l_1,epoch_times, learning_rate,batch_psize,Number_EpLogLike, Simulate_W_b_Pred, Pred_Simulate_Ytest,Simulate_Proba_Partition, DBS, dbs_epsilon)
+    
+    acceptation_ratio = ...[]...
+    
+```
+
 
 
 ```python
