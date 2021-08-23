@@ -164,25 +164,3 @@ for i in range(Maximum_number_of_partitions):
     acceptation_ratio = ...[]...
     
 ```
-
-
-
-```python
-Run the model in a finite loop for a maximum number of desired partitions such that we stop the loop when completed.
-
-The model has to reject the partition that are generated but not accepted by an acceptation ratio
-```
-
-
-```python
-Maximum_number_of_partitions = 10
-
-for i in range(Maximum_number_of_partitions):
-
-    
-    ShallowGibbsProcedure(New_partition, xtrain, ytrain, Partitions_Sets,partition_position, xtest,ytest,my_l_1,epoch_times, learning_rate,batch_psize,Number_EpLogLike, Simulate_W_b_Pred, Pred_Simulate_Ytest,Simulate_Proba_Partition, DBS, dbs_epsilon)
-    
-    acceptation_ratio = ...[]...
-    
-```
-
